@@ -1,5 +1,6 @@
 package com.meva.finance.controller;
 
+import com.meva.finance.Usuario.Usuario;
 import com.meva.finance.Usuario.UsuarioDto;
 import com.meva.finance.service.UsuariosService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,8 +15,8 @@ public class UsuarioController {
 
 
     @PostMapping ("/register")
-    public void register(@RequestBody UsuarioDto userDto) {
-        usuariosService.register(userDto);
+    public void register(@RequestBody Usuario usuario) {
+        usuariosService.register(usuario);
     }
 
   /*  @PutMapping ("/search")
@@ -23,5 +24,4 @@ public class UsuarioController {
         .save(new User)
 
     }*/
-    //tabelas, dto users, repository sp/data
 }
