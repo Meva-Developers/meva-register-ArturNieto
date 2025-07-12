@@ -1,5 +1,5 @@
 
-package com.meva.finance.api;
+package com.meva.finance.controller;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
